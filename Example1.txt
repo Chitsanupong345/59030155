@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+:'Bank Customer': as A
+:'Maintenance Person': as B
+:Bank: as C
+rectangle atm:ATM {
+A -- ('Withdraw Cash')
+A -- ('Transfer Funds')
+A -- ('Deposit Funds')
+('Withdraw Cash') -- C
+('Transfer Funds') -- C
+('Deposit Funds') -- C
+B -- ('Refill Machine')
+}
+@enduml

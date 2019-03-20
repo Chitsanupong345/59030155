@@ -1,0 +1,8 @@
+@startuml
+Left to Right Direction
+
+:Teacher: as Admin
+Admin -- (Login)
+(Login) ..> (Reset Pasword) : <<include>>
+(Login) ..> (Forgot Pasword) : <<extend>>
+@enduml

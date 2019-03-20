@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+:Student: as A
+:Faculty: as B
+
+A -- (Add Class)
+(Add Class) <.. (Class Full) :<<extend>>
+(Add Class) ..> (Login) :<<include>>
+(Add Class) ..> (Logout) :<<include>>
+
+B -- (Get Roster) 
+(Get Roster) ..> (Login) :<<include>>
+(Get Roster) ..> (Logout) :<<include>>
+
+
+@enduml
